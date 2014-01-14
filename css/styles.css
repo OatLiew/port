@@ -1,0 +1,110 @@
+
+/* additional styles for the Bootstrap lab */
+/* note that we do not need to import reset.css here because Bootstrap already resets
+the browser default styles before applying their own */
+
+
+body{
+
+	/*font-family: 'Calibri', sans-serf;*/
+	font-size: 20px;
+	padding: 20px;
+}
+
+.col-pic{
+	float:left;
+	width: 150px;
+	margin-right: 3em;
+	margin-left: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}
+
+.img{
+	float:left;
+	width: 400px;
+	margin-right: 3em;
+	margin-left: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+hr {
+  border: 0;
+  width: 100%;
+  color: #aaaaaa;
+  background-color: #aaaaaa;
+  height: 2px;
+}
+
+h1{
+	text-align: center;
+}
+
+h4{
+	text-align: center;
+}
+
+.jumbotron h1{
+	font-size: 90px;
+}
+
+
+@media screen and (max-width: 767px) {
+ 
+   .jumbotron h1{
+	font-size: 30px;
+	}
+}
+
+
+figure{
+    display: inline-block;
+    padding: 10px;
+    background-color: #FFF;
+}
+figcaption{
+    font-weight: 300;
+    text-align:center;
+    margin-top: 5px;
+}
+figure img{
+    width: 200px;
+    border:10px solid #EEE;
+    border-radius: 2px;
+}
+figure :hover{
+    box-shadow: 2px 2px 6px #555;
+    -webkit-transform: scale(1.2) ;
+    -moz-transform: scale(1.2) ;
+    -o-transform: scale(1.2) ;
+    -ms-transform: scale(1.2);
+    transform: scale(1.2) ;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;     
+}
+
+
+#about{
+    color: #0893cf;
+}
+
+section p:first-of-type:first-letter {
+	float: left;
+	font-size: 180%;
+	font-family: 'Georgia', serif;
+	color: #900;
+	margin-right: 5px;
+	margin-bottom: 0px;
+}
+
+nav h4{
+	color: white;
+}

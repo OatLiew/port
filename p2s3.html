@@ -1,0 +1,92 @@
+<!doctype html>	
+<html>
+	
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="description" content="My Portfolio Home Page">
+	    <meta name="author" content="Phongsakorn">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	    <link rel="shortcut icon" href="img/logo.png">
+	    <title>Portfolio</title>
+	    
+	    <!-- hot link to Bootstrap stylesheet -->
+	    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+	    <!-- our own stylesheet for overrides -->
+	    <link rel="stylesheet" href="css/styles.css">
+	</head>	
+
+
+
+	<body>
+		<div class="container">
+
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			    <div class="navbar-header">
+			        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".pawnee-navbar-menu">
+			            <span class="sr-only">Toggle Navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>                        
+			        </button>
+			        <a class="navbar-brand" href="index.html">Portfolio <img src="img/logo.png" alt="portfolio logo">
+
+			        </a>
+			    </div>
+
+			    <div class="collapse navbar-collapse pawnee-navbar-menu">
+			        <ul class="nav navbar-nav">
+			            <li><a href="index.html">back</a></li>
+			        </ul>
+			    </div>
+			</nav>
+
+			<br><br><br>
+			<section>
+				<br>
+		        <h2 id="about">ALU, SRAM and register file</h2>
+		        <img src="img/p2s3.png" alt="ALU, SRAM and register file" class="img">
+		        
+		        <p>
+		        	The task for this project was to create an ALU for our computer and our approach to the creation of this component was to first plan out the functionalities and creates the modules that would perform the functions one at a time. Our ALU can perform the no-op, add, subtract, and, or, xor, set-less-than, and shift left logical operations.
+
+					the final ALU module must be able to:
+					<ul>
+						<li>load data and instructions from the SRAM</li>
+						<li>transfer data from the SRAM to the register file</li>
+						<li>be able to read and interpret the instruction given to it</li>
+						<li>perform the requested function</li>
+						<li>store the result in the register file </li>			
+
+					</ul>
+
+					We used verilog to write all of the modules for our ALU, and using signal tap and the quartus environment we tested out module, and in the end confirming that it functions correctly.
+
+				</p>
+
+			</section>
+
+			<section>
+				
+				<a href="file/EE471Lab3Report.pdf" target="_blank">Project Report</a>
+					
+			</section>
+		
+
+
+		<br><br><br><br><br><br><br><br><br>
+
+		</div>
+
+		<nav class="navbar navbar-default navbar-inverse" role="navigation">
+			<a class="navbar-brand" href="index.html">Top</a>
+			<h4>Contact: &nbsp; &nbsp; 
+				<a href="mailto:iphong@uw.edu" target="_top">iphong@uw.edu,</a> 
+				&nbsp; &nbsp; 206 778-6888 </h4>
+		</nav>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+	</body>
+</html>

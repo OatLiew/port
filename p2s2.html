@@ -1,0 +1,85 @@
+<!doctype html>	
+<html>
+	
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="description" content="My Portfolio Home Page">
+	    <meta name="author" content="Phongsakorn">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	    <link rel="shortcut icon" href="img/logo.png">
+	    <title>Portfolio</title>
+	    
+	    <!-- hot link to Bootstrap stylesheet -->
+	    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+	    <!-- our own stylesheet for overrides -->
+	    <link rel="stylesheet" href="css/styles.css">
+	</head>	
+
+
+
+	<body>
+		<div class="container">
+
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			    <div class="navbar-header">
+			        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".pawnee-navbar-menu">
+			            <span class="sr-only">Toggle Navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>                        
+			        </button>
+			        <a class="navbar-brand" href="index.html">Portfolio <img src="img/logo.png" alt="portfolio logo">
+
+			        </a>
+			    </div>
+
+			    <div class="collapse navbar-collapse pawnee-navbar-menu">
+			        <ul class="nav navbar-nav">
+			            <li><a href="index.html">back</a></li>
+			        </ul>
+			    </div>
+			</nav>
+
+			<br><br><br>
+			<section>
+		        <h2 id="about">Data Collection System</h2>
+		        <img src="img/p2s2.png" alt="quadCopter" class="img">
+		        
+		        <p>
+		        	The whole design is to have a local controller and remote controller that collect datas from sensors and stores them in SRAMs. The controllers communicate to each other through I2C and with the client through RS232. The design incorporates ripple counter, gal chips, SRAM, PIC, external crystal oscillator, and instrumentation amplifier and difference amplifier to provide the function. The design is successful in accomplishing the I2C communication and responding the right requests from the PC and sending the right data.
+
+				</p>
+
+				<p>
+					To implement the design, we use two 18F25K22 PIC microprocessors to handle the data collection system. One at the local site and one to model six remote sites. The local site has four sensors that measure temperature with a thermocouple, carbon level, salinity level, and flow rate with external oscillator. The PICs are communicated through I2C. The local controller and the Master PC on the client side are communicated through RS-232 to display the returned data. The datas from the environmental sensors are stored in the SRAM accompanying the PIC. We used the Agilent Logic Analyzer, MPLABX IDE, and PICkit 3 to help us develop and debug our design. 
+
+				</p>
+
+			</section>
+
+			<section>
+				<a href="img/p2s22.png"><img src="img/p2s22.png" alt="System design" class="img"></a>
+				
+				<a href="file/EE478Lab2Report.docx" target="_blank">Project Report</a>
+					
+			</section>
+		
+
+
+		<br><br><br><br><br><br><br><br><br>
+
+		</div>
+
+		<nav class="navbar navbar-default navbar-inverse" role="navigation">
+			<a class="navbar-brand" href="index.html">Top</a>
+			<h4>Contact: &nbsp; &nbsp; 
+				<a href="mailto:iphong@uw.edu" target="_top">iphong@uw.edu,</a> 
+				&nbsp; &nbsp; 206 778-6888 </h4>
+		</nav>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+	</body>
+</html>
