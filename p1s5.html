@@ -1,0 +1,93 @@
+<!doctype html>	
+<html>
+	
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="description" content="My Portfolio Home Page">
+	    <meta name="author" content="Phongsakorn">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	    <link rel="shortcut icon" href="img/logo.png">
+	    <title>Portfolio</title>
+	    
+	    <!-- hot link to Bootstrap stylesheet -->
+	    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+	    <!-- our own stylesheet for overrides -->
+	    <link rel="stylesheet" href="css/styles.css">
+	</head>	
+
+
+
+	<body>
+		<div class="container">
+
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			    <div class="navbar-header">
+			        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".pawnee-navbar-menu">
+			            <span class="sr-only">Toggle Navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>                        
+			        </button>
+			        <a class="navbar-brand" href="index.html">Portfolio <img src="img/logo.png" alt="portfolio logo">
+
+			        </a>
+			    </div>
+
+			    <div class="collapse navbar-collapse pawnee-navbar-menu">
+			        <ul class="nav navbar-nav">
+			            <li><a href="index.html">back</a></li>
+			        </ul>
+			    </div>
+			</nav>
+
+			<br><br><br>
+			<section>
+		        <h2 id="about">NBA Search</h2>
+		        <img src="img/p1s5.png" alt="dog in park" class="img">
+		        
+		        <p>
+		        	I tried to take a different approach by implementing Angular JS instead of  regular Jquery and AJAX.  Angular Js is based on the MVC model and uses the concept of two ways binding. 
+					As a result, the code looks much cleaner and easier to understand compared to Jquery. 
+				</p>
+
+				<p>
+
+	The searching is done through using ng-model and ng-repeat in Angular JS. Ng-repeat is very convenient tool for looping through the JSON file and splitting out the objects without having to write redundant code.  Also, ng-repeat has a sorting library such as orderBy which can be used to order the search result.  
+</p> <p>
+	In the beginning, I have done the searching by using the SQL query every time the user click the button search. The keyword that is entered will be use in the SQL query (like=”%keyword%”).   I found that the code is much more complicated compared to Jquery and I didn't utilize the full functionality of Angular JS of two way binding. After discovering the ng-repeat, the code was much simpler.
+</p>
+<p>
+	I used mysqlworkBench to import in all the csv file into the AWS RDS. Create the raw table then load the raw information into the table. Then I created another new table then imported the useful datas into the new table. 
+</p>
+
+<p>
+	When the page is loaded the http request is called to load all the data from RDS and then it is converted to JSON file using JSON_ENCODE. I took me a while to find the information on the onload page in Angular JS.
+</p>	
+	By importing all the files in SRV/www/htdocs, I was able to view the website on AWSEC2.
+<p>
+In conclusion, although it took a while to learn and understand Angular JS, MVC and two way bidding, I think the code look much cleaner compared to Jqeury with much more powerful library such as ng-repeat and ng-model, ng-animate...  However, I think it's less flexible and harder to modify the Angular JS compared to the Jquery.  
+</p>
+				</p>
+
+				<p>
+					<a href="http://ec2-54-201-117-7.us-west-2.compute.amazonaws.com/" target="_blank">SITE</a>
+				</p>	
+			</section>
+
+		<br><br><br><br><br><br><br><br><br>
+
+		</div>
+
+		<nav class="navbar navbar-default navbar-inverse" role="navigation">
+			<a class="navbar-brand" href="index.html">Top</a>
+			<h4>Contact: &nbsp; &nbsp; 
+				<a href="mailto:iphong@uw.edu" target="_top">iphong@uw.edu,</a> 
+				&nbsp; &nbsp; 206 778-6888 </h4>
+		</nav>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+	</body>
+</html>
