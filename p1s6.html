@@ -1,0 +1,95 @@
+<!doctype html>	
+<html>
+	
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="description" content="My Portfolio Home Page">
+	    <meta name="author" content="Phongsakorn">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	    <link rel="shortcut icon" href="img/logo.png">
+	    <title>Portfolio</title>
+	    
+	    <!-- hot link to Bootstrap stylesheet -->
+	    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+	    <!-- our own stylesheet for overrides -->
+	    <link rel="stylesheet" href="css/styles.css">
+	</head>	
+
+
+
+	<body>
+		<div class="container">
+
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			    <div class="navbar-header">
+			        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".pawnee-navbar-menu">
+			            <span class="sr-only">Toggle Navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>                        
+			        </button>
+			        <a class="navbar-brand" href="index.html">Portfolio <img src="img/logo.png" alt="portfolio logo">
+
+			        </a>
+			    </div>
+
+			    <div class="collapse navbar-collapse pawnee-navbar-menu">
+			        <ul class="nav navbar-nav">
+			            <li><a href="index.html">back</a></li>
+			        </ul>
+			    </div>
+			</nav>
+
+			<br><br><br>
+			<section>
+		        <h2 id="about">CNN Crawler</h2>
+		        
+		        <div>
+		        <a href="http://344crawler.cloudapp.net/dashboard.aspx" target="_blank"><img src="img/p1s6.png" alt="CNN crawler" class="img"></a>
+		        </div>
+
+		        <div class ="panel panel-default">
+		        <div class="panel-body">	
+		        <p>CNN Crawler includes four majors parts, connecting to EC2 for JSONP callback for the NBA players stats which are on AWS RDS,  buiding trie data structure for search suggestion with WIKI pedia titles on Webservice with C#, and crawling through CNN website to index titles with wokerroles and returning the search result with Azure tables(no sql) which is displayed on the dashboard. The site is hosted on Azure and Azure table, queues AWS EC2 and RDS.
+				</p>
+ 				
+ 				</br></br>
+				<p>Technology: ASP.net, C#, JSON, JSONP, WEBServices, AJAX, Jquery, Bootstrap, Javascript, html, CSS, AWS RDS, AZURE, Azure table</p>	
+
+				<p>The users would be able to search for NBA players name and be able to see the display pictures and their stats. There would be a suggested query from WIKIpedia titles from a-c (running out fo memory) and the users would be able to search for any crawled words title in the CNN.com website. The result will include title, date and urls linked.
+				</p>	
+
+				<p>For the first part, the NBA player stats are on AWS RDS. I created a php webservices with a callback funtion for JSONP. The returning result would be the player Stats with display pictures. The name need to be an exact match for the stats to show up.</p>
+
+				<p>For the second part, I built a static trie data structure from WIKI pedia tiles, the trie is able to build up to "C" because of the running out of memory issue. The code is written on C# Webrole. Also, I use keep alive service to keep the trie data active.</p> 
+
+				<p>For the third part, the worker role will first crawl through robots.txt on CNN to get all the urls then put into Azure queues. Then the woker will start crawling until the stop command is issued. The web role and worker role can commnicate through the Azure queues. It will index the page title and date on each links in CNN.com site and upload the key pair value to Azure table(no sql) for retrieval of the title and urls.
+				</p>
+
+				<p>The last part is just to build up the dashboard for displaying the information and issuing command to the worker role.</p>
+			   </div>
+			   </div>
+
+
+				<div>
+					<a href="http://344crawler.cloudapp.net/dashboard.aspx" target="_blank">SITE</a>
+				</div>	
+			</section>
+
+		<br><br><br><br><br><br><br><br><br>
+
+		</div>
+
+		<nav class="navbar navbar-default navbar-inverse" role="navigation">
+			<a class="navbar-brand" href="index.html">Top</a>
+			<h4>Contact: &nbsp; &nbsp; 
+				<a href="mailto:iphong@uw.edu" target="_top">iphong@uw.edu,</a> 
+				&nbsp; &nbsp; 206 778-6888 </h4>
+		</nav>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+	</body>
+</html>
